@@ -27,9 +27,13 @@ applicationDBUsername: root
 
 applicationS3UploadsBucket: master
 applicationS3UploadsRegion: custom
-applicationS3UploadsEndpoint: https://static.s3waas.gov.in
-applicationS3UploadsBucketURL: https://static.s3waas.gov.in/master
-applicationS3UploadsCDNURL: https://cdn.s3waas.gov.in
+#applicationS3UploadsEndpoint: https://static.s3waas.gov.in
+#applicationS3UploadsBucketURL: https://static.s3waas.gov.in/master
+#applicationS3UploadsCDNURL: https://cdn.s3waas.gov.in
+applicationS3UploadsEndpoint: http://s3waasnic.gov.in/
+applicationS3UploadsBucketURL: http://s3waasnic.gov.in/master
+applicationS3UploadsCDNURL: http://s3waasnic.gov.in/
+
 
 applicationLive: 0
 applicationHTTPS: "off"
@@ -107,6 +111,7 @@ mariadb:
       ##   GKE, AWS & OpenStack)
       ##
       # storageClass: "-"
+      storageClassName: s3waas
       accessMode: ReadWriteOnce
       size: 8Gi
 
