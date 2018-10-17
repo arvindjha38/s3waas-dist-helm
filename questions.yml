@@ -39,7 +39,7 @@ questions:
   group: "State Application Settings"
 - variable: applicationAdminUsername
   default: "admin"
-  description: "District Application Admin Username"
+  description: "State Application Admin Username"
   type: string
   required: true
   label: Admin Username
@@ -77,7 +77,6 @@ questions:
   label: Language Code
   type: string
   required: true
-  description: "State Application language code to be used in URL"
   group: "State Application Settings"
 - variable: applicationLanguageLocale
   default: "hi_IN"
@@ -110,7 +109,7 @@ questions:
   default: "false"
   label: Make Live
   type: boolean
-  description: "Application settings for sites that are being made Live with district URL"
+  description: "Application settings for sites that are being made Live with state URL"
   group: "State Application Settings"
 - variable: applicationHTTPS
   default: "false"
